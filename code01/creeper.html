@@ -1,0 +1,18 @@
+<canvas width="400" height="400">
+
+</canvas>
+
+<script>
+    var canvas = document.querySelector("canvas");
+    var brush = canvas.getContext("2d");
+
+    brush.fillStyle = "darkgreen"; // head
+    brush.fillRect(0, 0, 400, 400);
+
+    brush.fillStyle = "black"; 
+    brush.fillRect(50, 50, 100, 100); // left eye
+    brush.fillRect(250, 50, 100, 100); // right eye
+    brush.fillRect(150, 150, 100, 150); // nose
+    brush.fillRect(100, 200, 50, 150);  // left side mouth
+    brush.fillRect(250, 200, 50, 150); // right side mouth
+</script>
