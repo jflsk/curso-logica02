@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600" height="400">
 
+    </canvas>
+    
+    <script>
+
+        function drawBox(x, y, color) {
+            var canvas = document.querySelector("canvas");
+            var brush = canvas.getContext("2d");
+        
+            brush.fillStyle = color;
+            brush.fillRect(x, y, 50, 50);
+            //brush.strokeStyle="red";
+            brush.fillStroke = "black";
+            brush.strokeRect(x, y, 50, 50);
+
+        }
+
+        /*
+        var x = 0;
+        while (x < 600) {
+
+            drawBox(x, 0, "green");
+            drawBox(x, 50, "red");
+            drawBox(x, 100, "yellow");
+            x = x + 50;
+
+        }
+        */
+       
+        for (var x = 0; x < 600; x = x + 50) {
+            drawBox(x, 0, "green");
+        }
+    </script>
+</body>
+</html>
